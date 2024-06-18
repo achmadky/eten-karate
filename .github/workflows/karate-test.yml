@@ -22,7 +22,6 @@ jobs:
     - name: Run Karate Tests
       run: java -jar karate-standalone.jar src/test/java/karate
 
-
   karate-docker:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
