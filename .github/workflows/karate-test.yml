@@ -3,10 +3,10 @@ name: Karate API Tests
 on:
   push:
     branches:
-      - main  # adjust branch as needed
+      - master  # adjust branch as needed
   pull_request:
     branches:
-      - main  # adjust branch as needed
+      - master  # adjust branch as needed
 
 jobs:
   test:
