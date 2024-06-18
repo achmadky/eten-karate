@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  karate-tests:
+    build: .
+    container_name: karate-tests
+    image: karate-tests:latest
+    command: ["java", "-cp", "karate-standalone.jar", "com.intuit.karate.Main", "src/test/java/karate"]
