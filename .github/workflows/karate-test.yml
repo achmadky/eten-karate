@@ -21,3 +21,17 @@ jobs:
 
     - name: Run Karate Tests
       run: java -jar karate-standalone.jar src/test/java/karate
+
+
+  karate-docker:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: docker build -t karate-tests:latest .
+
+    - name: Run Karate tests in Docker
+      run: docker run --rm karate-tests:latest

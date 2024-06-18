@@ -1,5 +1,5 @@
-# Use a base image with Java installed
-FROM openjdk:11-jre-slim
+# Use a base image with Java 8 installed
+FROM openjdk:8-jre-alpine
 
 # Set working directory
 WORKDIR /app
@@ -7,5 +7,5 @@ WORKDIR /app
 # Copy the project files into the Docker image
 COPY . /app
 
-# Run the tests
-CMD ["java", "-cp", "karate-standalone.jar", "com.intuit.karate.Main", "src/test/java/karate"]
+# Command to run your Karate tests using the Karate standalone JAR
+CMD ["java", "-jar", "karate-standalone.jar", "src/test/java/karate"]
