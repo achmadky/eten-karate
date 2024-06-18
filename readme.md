@@ -11,14 +11,18 @@ This repository contains API tests written in Karate. The tests are executed usi
 ## Project Structure
 
 karate-api-testing/
+│
 ├── .github/
 │   └── workflows/
 │       └── karate-tests.yml
+│
 ├── src/
 │   └── test/
 │       └── java/
 │           └── karate/
 │               ├── foodInfo.feature
 │               └── sample.feature
+│
 ├── Dockerfile
+│
 └── README.md
