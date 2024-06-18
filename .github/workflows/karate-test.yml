@@ -7,7 +7,6 @@ on:
   pull_request:
     branches:
       - master  # adjust branch as needed
-
 jobs:
   test:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
@@ -16,22 +15,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-
     - name: Download Karate Standalone JAR
       run: |
         wget -O karate-standalone.jar https://github.com/intuit/karate/releases/download/v1.2.0/karate-1.2.0.jar
 
     - name: Run Karate Tests
-      run: |
-        java -jar karate-standalone.jar src/test/java/karate
-
-    - name: Upload Test Results
-      if: always()
-      uses: actions/upload-artifact@v2
-      with:
-        name: karate-test-results
-        path: target/surefire-reports  # adjust path if necessary
+      run: java -jar karate-standalone.jar src/test/java/karate
