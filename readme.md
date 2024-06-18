@@ -6,18 +6,19 @@ This repository contains API tests written in Karate. The tests are executed usi
 
 - Docker: Ensure Docker is installed and running on your machine.
 - GitHub account and repository.
+- Karate version: 1.2.0.RC1
 
 ## Project Structure
 
 karate-api-testing/
 ├── .github/
-│ └── workflows/
-│ └── karate-tests.yml
+│   └── workflows/
+│       └── karate-tests.yml
 ├── src/
-│ └── test/
-│ └── java/
-│ └── karate/
-│ ├── foodInfo.feature
-│ └── sample.feature
+│   └── test/
+│       └── java/
+│           └── karate/
+│               ├── foodInfo.feature
+│               └── sample.feature
 ├── Dockerfile
 └── README.md
