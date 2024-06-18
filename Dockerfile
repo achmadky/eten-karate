@@ -11,4 +11,4 @@ COPY karate-standalone.jar /app/karate-standalone.jar
 COPY ./src/test/java/karate /app/src/test/java/karate
 
 # Command to run your Karate tests using the Karate standalone JAR
-CMD ["java", "-jar", "karate-standalone.jar", "src/test/java/karate"]
+CMD ["java", "-jar", "karate.jar", "src/test/java/karate"]
