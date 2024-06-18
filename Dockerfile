@@ -5,7 +5,7 @@ FROM openjdk:8-jre-alpine
 WORKDIR /app
 
 # Copy the Karate standalone JAR file into the Docker image
-COPY karate-standalone.jar /app/karate-standalone.jar
+COPY karate.jar /app/karate.jar
 
 # Copy the Karate feature files into the Docker image (adjust path as needed)
 COPY ./src/test/java/karate /app/src/test/java/karate
