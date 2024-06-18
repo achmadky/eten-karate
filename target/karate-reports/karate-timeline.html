@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/karate\/foodInfo[1:3]","start":1718734842647,"end":1718734845372,"title":"src\/test\/java\/karate\/foodInfo[1:3] 01:20:42.647-01:20:45.372 Get information about Egg"},{"id":2,"group":1,"content":"src\/test\/java\/karate\/foodInfo[2:12]","start":1718734845389,"end":1718734845775,"title":"src\/test\/java\/karate\/foodInfo[2:12] 01:20:45.389-01:20:45.775 Get information about a non-existent food"},{"id":3,"group":1,"content":"src\/test\/java\/karate\/foodInfo[3:18]","start":1718734845792,"end":1718734846174,"title":"src\/test\/java\/karate\/foodInfo[3:18] 01:20:45.792-01:20:46.174 Invalid request to Food Info API"},{"id":4,"group":1,"content":"src\/test\/java\/karate\/foodList[1:3]","start":1718734847502,"end":1718734847894,"title":"src\/test\/java\/karate\/foodList[1:3] 01:20:47.502-01:20:47.894 Get list of foods"},{"id":5,"group":1,"content":"src\/test\/java\/karate\/sample[1:3]","start":1718734848052,"end":1718734848225,"title":"src\/test\/java\/karate\/sample[1:3] 01:20:48.052-01:20:48.225 Get request to JSONPlaceholder"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

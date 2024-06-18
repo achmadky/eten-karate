@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.karate.foodList</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-06-19 01:20:47 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get list of foods</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/karate/foodList.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Food List API Tests</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get list of foods</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>389</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://eten-api.vercel.app/api/foodList&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header accept = &#39;*/*&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">383</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">01:20:47.514 request:
+1 &gt; GET https://eten-api.vercel.app/api/foodList
+1 &gt; accept: */*
+1 &gt; Host: eten-api.vercel.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:20:47.889 response time in milliseconds: 358
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 &lt; Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: public, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 18 Jun 2024 18:20:47 GMT
+1 &lt; Etag: W/&quot;qujbdhqw0d3hp&quot;
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 &lt; Vary: Origin
+1 &lt; X-Matched-Path: /api/foodList
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Id: sin1::iad1::ssq52-1718734847631-73b465ad3f41
+1 &lt; Transfer-Encoding: chunked
+[&quot;Apple&quot;,&quot;Banana&quot;,&quot;Orange&quot;,&quot;Pear&quot;,&quot;Grapes&quot;,&quot;Strawberries&quot;,&quot;Blueberries&quot;,&quot;Raspberries&quot;,&quot;Watermelon&quot;,&quot;Pineapple&quot;,&quot;Mango&quot;,&quot;Peach&quot;,&quot;Plum&quot;,&quot;Apricot&quot;,&quot;Kiwi&quot;,&quot;Cherry&quot;,&quot;Lemon&quot;,&quot;Lime&quot;,&quot;Grapefruit&quot;,&quot;Avocado&quot;,&quot;Cucumber&quot;,&quot;Tomato&quot;,&quot;Carrot&quot;,&quot;Celery&quot;,&quot;Broccoli&quot;,&quot;Spinach&quot;,&quot;Lettuce&quot;,&quot;Cabbage&quot;,&quot;Bell pepper&quot;,&quot;Eggplant&quot;,&quot;Zucchini&quot;,&quot;Cauliflower&quot;,&quot;Asparagus&quot;,&quot;Green beans&quot;,&quot;Peas&quot;,&quot;Corn&quot;,&quot;Potato&quot;,&quot;Sweet potato&quot;,&quot;Pumpkin&quot;,&quot;Butternut squash&quot;,&quot;Acorn squash&quot;,&quot;Spaghetti squash&quot;,&quot;Butter&quot;,&quot;Milk&quot;,&quot;Yogurt&quot;,&quot;Cheese&quot;,&quot;Egg&quot;,&quot;Beef&quot;,&quot;Pork&quot;,&quot;Chicken&quot;,&quot;Turkey&quot;,&quot;Salmon&quot;,&quot;Tuna&quot;,&quot;Trout&quot;,&quot;Shrimp&quot;,&quot;Crab&quot;,&quot;Lobster&quot;,&quot;Oyster&quot;,&quot;Clam&quot;,&quot;Scallop&quot;,&quot;Tofu&quot;,&quot;Tempeh&quot;,&quot;Seitan&quot;,&quot;Quinoa&quot;,&quot;Brown rice&quot;,&quot;Oats&quot;,&quot;Whole wheat bread&quot;,&quot;Whole wheat pasta&quot;,&quot;Lentils&quot;,&quot;Black beans&quot;,&quot;Chickpeas&quot;,&quot;Kidney beans&quot;,&quot;Almonds&quot;,&quot;Walnuts&quot;,&quot;Peanuts&quot;,&quot;Cashews&quot;,&quot;Pistachios&quot;,&quot;Hazelnuts&quot;,&quot;Pecans&quot;,&quot;Brazil nuts&quot;,&quot;Macadamia nuts&quot;,&quot;Pumpkin seeds&quot;,&quot;Sunflower seeds&quot;,&quot;Flaxseeds&quot;,&quot;Chia seeds&quot;,&quot;Hemp seeds&quot;,&quot;Sesame seeds&quot;,&quot;Poppy seeds&quot;,&quot;Coconut&quot;,&quot;Coconut milk&quot;,&quot;Coconut oil&quot;,&quot;Olive oil&quot;,&quot;Canola oil&quot;,&quot;Soybean oil&quot;,&quot;Corn oil&quot;,&quot;Peanut oil&quot;,&quot;Sunflower oil&quot;,&quot;Avocado oil&quot;,&quot;Almond oil&quot;,&quot;Wheat germ oil&quot;,&quot;Soy sauce&quot;,&quot;Tamari&quot;,&quot;Fish sauce&quot;,&quot;Oyster sauce&quot;,&quot;Worcestershire sauce&quot;,&quot;Sriracha&quot;,&quot;Ketchup&quot;,&quot;Mustard&quot;,&quot;Mayonnaise&quot;,&quot;Barbecue sauce&quot;,&quot;Honey&quot;,&quot;Maple syrup&quot;,&quot;Molasses&quot;,&quot;Agave nectar&quot;,&quot;Coconut sugar&quot;,&quot;Stevia&quot;,&quot;Brown sugar&quot;,&quot;White sugar&quot;,&quot;Powdered sugar&quot;,&quot;Milk chocolate&quot;,&quot;Dark chocolate&quot;,&quot;White chocolate&quot;,&quot;Cocoa powder&quot;,&quot;Chocolate syrup&quot;,&quot;Peanut butter&quot;,&quot;Almond butter&quot;,&quot;Cashew butter&quot;,&quot;Hazelnut spread&quot;,&quot;Sunflower seed butter&quot;,&quot;Coconut butter&quot;,&quot;Apple pie&quot;,&quot;Banana bread&quot;,&quot;Blueberry muffin&quot;,&quot;Carrot cake&quot;,&quot;Chocolate chip cookies&quot;,&quot;Cheesecake&quot;,&quot;Brownies&quot;,&quot;Cupcakes&quot;,&quot;Pancakes&quot;,&quot;Waffles&quot;,&quot;French toast&quot;,&quot;Cinnamon rolls&quot;,&quot;Donuts&quot;,&quot;Croissants&quot;,&quot;Bagels&quot;,&quot;English muffins&quot;,&quot;Scones&quot;,&quot;Biscuits&quot;,&quot;Cornbread&quot;,&quot;Rice pudding&quot;,&quot;Bread pudding&quot;,&quot;Apple crisp&quot;,&quot;Peach cobbler&quot;,&quot;Cherry pie&quot;,&quot;Strawberry shortcake&quot;,&quot;Key lime pie&quot;,&quot;Pecan pie&quot;,&quot;Pumpkin pie&quot;,&quot;Sweet potato pie&quot;,&quot;Chocolate cake&quot;,&quot;Vanilla cake&quot;,&quot;Red velvet cake&quot;,&quot;Angel food cake&quot;,&quot;Tiramisu&quot;,&quot;Fruit salad&quot;,&quot;Ambrosia salad&quot;,&quot;Caesar salad&quot;,&quot;Cobb salad&quot;,&quot;Nicoise salad&quot;,&quot;Waldorf salad&quot;,&quot;Greek salad&quot;,&quot;Caprese salad&quot;,&quot;Antipasto salad&quot;,&quot;Chef salad&quot;,&quot;Spinach salad&quot;,&quot;Taco salad&quot;,&quot;Fajita salad&quot;,&quot;Coleslaw&quot;,&quot;Potato salad&quot;,&quot;Macaroni salad&quot;,&quot;Egg salad&quot;,&quot;Pasta salad&quot;,&quot;Quiche&quot;,&quot;Sushi&quot;,&quot;Tempura&quot;,&quot;Sashimi&quot;,&quot;Ramen&quot;,&quot;Udon&quot;,&quot;Soba&quot;,&quot;Pho&quot;,&quot;Pad Thai&quot;,&quot;Spring rolls&quot;,&quot;Gyoza&quot;,&quot;Tandoori chicken&quot;,&quot;Butter chicken&quot;,&quot;Chicken tikka masala&quot;,&quot;Saag paneer&quot;,&quot;Dal makhani&quot;,&quot;Aloo gobi&quot;,&quot;Biryani&quot;,&quot;Chicken curry&quot;,&quot;Beef curry&quot;,&quot;Lamb curry&quot;,&quot;Vegetable curry&quot;,&quot;Chickpea curry&quot;,&quot;Egg curry&quot;,&quot;Paneer curry&quot;,&quot;Korma&quot;,&quot;Masala dosa&quot;,&quot;Idli&quot;,&quot;Vada&quot;,&quot;Samosa&quot;,&quot;Nasi Goreng&quot;,&quot;Mie Goreng&quot;,&quot;Sate Ayam&quot;,&quot;Soto Ayam&quot;,&quot;Gado-Gado&quot;,&quot;Rendang&quot;,&quot;Ayam Bakar&quot;,&quot;Nasi Padang&quot;,&quot;Bakso&quot;,&quot;Pempek&quot;,&quot;Ayam Goreng&quot;,&quot;Nasi Uduk&quot;,&quot;Martabak&quot;,&quot;Bubur Ayam&quot;,&quot;Rujak&quot;,&quot;Lontong Sayur&quot;,&quot;Nasi Kuning&quot;,&quot;Pecel Lele&quot;,&quot;Sate Padang&quot;,&quot;Sop Buntut&quot;,&quot;Sambal Goreng Kentang&quot;,&quot;Bakmi Goreng&quot;,&quot;Pisang Goreng&quot;,&quot;Sop Ayam&quot;,&quot;Rawon&quot;,&quot;Soto Betawi&quot;,&quot;Nasi Pecel&quot;,&quot;Rendang Padang&quot;,&quot;Sayur Asem&quot;,&quot;Sate Kambing&quot;,&quot;Sambal Telur&quot;,&quot;Gulai Ayam&quot;,&quot;Mie Ayam&quot;,&quot;Ayam Goreng Kalasan&quot;,&quot;Pisang Goreng&quot;,&quot;Soto Betawi&quot;,&quot;Nasi Pecel&quot;,&quot;Rendang Padang&quot;,&quot;Sayur Asem&quot;,&quot;Sate Kambing&quot;,&quot;Sambal Telur&quot;,&quot;Gulai Ayam&quot;,&quot;Mie Ayam&quot;,&quot;Ayam Goreng Kalasan&quot;,&quot;Nasi Liwet&quot;,&quot;Lontong Sayur&quot;,&quot;Sambal Goreng Kentang&quot;,&quot;Sate Klathak&quot;,&quot;Tahu Campur&quot;,&quot;Nasi Liwet Solo&quot;,&quot;Ayam Goreng Kalasan&quot;,&quot;Pisang Goreng&quot;,&quot;Soto Betawi&quot;,&quot;Gudeg&quot;,&quot;Laksa&quot;,&quot;Nasi Kuning&quot;,&quot;Soto Ayam&quot;,&quot;Rendang Padang&quot;,&quot;Nasi Goreng&quot;,&quot;Mie Goreng&quot;,&quot;Sate Ayam&quot;,&quot;Soto Ayam&quot;,&quot;Gado-Gado&quot;,&quot;Rendang&quot;,&quot;Ayam Bakar&quot;,&quot;Nasi Padang&quot;,&quot;Bakso&quot;,&quot;Nasi Lemak&quot;,&quot;Roti Canai&quot;,&quot;Char Kway Teow&quot;,&quot;Hainanese Chicken Rice&quot;,&quot;Mee Goreng&quot;,&quot;Satay&quot;,&quot;Rendang&quot;,&quot;Laksa&quot;,&quot;Nasi Goreng&quot;,&quot;Murtabak&quot;,&quot;Mee Rebus&quot;,&quot;Otak-Otak&quot;,&quot;Nasi Kerabu&quot;,&quot;Popiah&quot;,&quot;Ayam Percik&quot;,&quot;Mee Siam&quot;,&quot;Lontong&quot;,&quot;Nasi Dagang&quot;,&quot;Pulut Panggang&quot;,&quot;Kuih Lapis&quot;,&quot;Ketupat&quot;,&quot;Kuih Dadar&quot;,&quot;Pisang Goreng&quot;,&quot;Cendol&quot;,&quot;Kaya Toast&quot;,&quot;Durian Pancake&quot;,&quot;Roti Bakar&quot;,&quot;Nasi Impit&quot;,&quot;Mee Bandung&quot;,&quot;Keropok Lekor&quot;,&quot;Apam Balik&quot;,&quot;Kuih Talam&quot;,&quot;Tauhu Sumbat&quot;,&quot;Pulut Inti&quot;,&quot;Mee Hoon Kueh&quot;,&quot;Serunding&quot;,&quot;Bubur Lambuk&quot;,&quot;Asam Pedas&quot;,&quot;Kuih Kapit&quot;,&quot;Mee Jawa&quot;,&quot;Hainanese Chicken Rice&quot;,&quot;Chilli Crab&quot;,&quot;Char Kway Teow&quot;,&quot;Laksa&quot;,&quot;Bak Kut Teh&quot;,&quot;Roti Prata&quot;,&quot;Satay&quot;,&quot;Fish Head Curry&quot;,&quot;Hokkien Mee&quot;,&quot;Tau Huay&quot;,&quot;Bak Chor Mee&quot;,&quot;Kaya Toast&quot;,&quot;Nasi Lemak&quot;,&quot;Kopi&quot;,&quot;Carrot Cake&quot;,&quot;Bak Chor Mee&quot;,&quot;Bak Kut Teh&quot;,&quot;Kaya Toast&quot;,&quot;Nasi Lemak&quot;,&quot;Roti Prata&quot;,&quot;Satay&quot;,&quot;Chilli Crab&quot;,&quot;Laksa&quot;,&quot;Hainanese Chicken Rice&quot;,&quot;Tau Huay&quot;,&quot;Fish Head Curry&quot;,&quot;Char Kway Teow&quot;,&quot;Hokkien Mee&quot;,&quot;Kopi&quot;,&quot;Carrot Cake&quot;]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0] != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

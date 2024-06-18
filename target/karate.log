@@ -1,0 +1,495 @@
+01:15:46.691 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:15:50.893 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=Egg
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:15:53.246 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2347
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 63
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:15:53 GMT
+1 < Etag: "n0mu8xj32y1r"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::dml8v-1718734551673-2b0684a78037
+{"food":{"id":47,"name":"Egg","calories":78,"cholesterol":186}}
+01:15:53.400 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=NonExistentFood
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:15:53.799 [main]  DEBUG com.intuit.karate - response time in milliseconds: 399
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:15:53 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::2twq7-1718734553541-3d89e87dcc11
+{}
+01:15:53.827 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:15:54.281 [main]  DEBUG com.intuit.karate - response time in milliseconds: 453
+1 < 400
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:15:54 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::wrxn2-1718734553971-a95e057c1c04
+{}
+01:15:55.480 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karate/foodInfo.feature
+01:16:52.257 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:16:52.738 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/karate/foodList.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+01:17:22.747 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:17:23.187 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/karate/foodList.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+01:17:31.181 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:17:31.695 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/karate/foodList.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+01:17:37.304 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:17:37.777 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718734657777
+01:17:41.492 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=Egg
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:17:42.309 [main]  DEBUG com.intuit.karate - response time in milliseconds: 814
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 63
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:17:42 GMT
+1 < Etag: "n0mu8xj32y1r"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::nlnfz-1718734661941-c02cdd5beb8a
+{"food":{"id":47,"name":"Egg","calories":78,"cholesterol":186}}
+01:17:42.467 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=NonExistentFood
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:17:42.901 [main]  DEBUG com.intuit.karate - response time in milliseconds: 432
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:17:42 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::dml8v-1718734662616-5ab1205819c3
+{}
+01:17:42.916 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:17:43.296 [main]  DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 400
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:17:43 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::vlgdk-1718734663021-579ac329a712
+{}
+01:17:44.679 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karate/foodInfo.feature
+01:18:03.352 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:18:03.829 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718734683829
+01:18:06.901 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodList
+1 > accept: */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:18:07.951 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1050
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:18:07 GMT
+1 < Etag: W/"qujbdhqw0d3hp"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodList
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::qw4pr-1718734687269-3876e4747d4d
+1 < Transfer-Encoding: chunked
+["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+01:18:08.101 [main]  ERROR com.intuit.karate - src/test/java/karate/foodList.feature:9
+And match response == '#[0]'
+match failed: EQUALS
+  $ | actual array length is 349 (LIST:STRING)
+  ["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+  '#[0]'
+
+src/test/java/karate/foodList.feature:9
+01:18:09.352 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/karate/foodList.feature
+01:18:27.622 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:18:28.039 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718734708039
+01:18:31.524 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodList
+1 > accept: */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:18:32.239 [main]  DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:18:32 GMT
+1 < Etag: W/"qujbdhqw0d3hp"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodList
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::7xz6t-1718734711955-84cbf63b8e43
+1 < Transfer-Encoding: chunked
+["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+01:18:32.422 [main]  ERROR com.intuit.karate - src/test/java/karate/foodList.feature:9
+And match response == '#[0]'
+match failed: EQUALS
+  $ | actual array length is 349 (LIST:STRING)
+  ["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+  '#[0]'
+
+src/test/java/karate/foodList.feature:9
+01:18:33.568 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/karate/foodList.feature
+01:19:14.631 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:19:15.243 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718734755230
+01:19:18.369 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodList
+1 > accept: */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:19:19.013 [main]  DEBUG com.intuit.karate - response time in milliseconds: 642
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:19:18 GMT
+1 < Etag: W/"qujbdhqw0d3hp"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodList
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::tqzng-1718734758745-2231b9b443e1
+1 < Transfer-Encoding: chunked
+["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+01:19:19.220 [main]  ERROR com.intuit.karate - src/test/java/karate/foodList.feature:10
+And match response.length > 0
+no step-definition method match found for: match response.length > 0
+src/test/java/karate/foodList.feature:10
+01:19:20.483 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/karate/foodList.feature
+01:19:40.896 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:19:41.430 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718734781429
+01:19:41.469 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+01:19:44.506 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodList
+1 > accept: */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:19:45.140 [main]  DEBUG com.intuit.karate - response time in milliseconds: 634
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:19:45 GMT
+1 < Etag: W/"qujbdhqw0d3hp"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodList
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::4wq5g-1718734784874-fbcdf6f87a61
+1 < Transfer-Encoding: chunked
+["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+01:19:46.491 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karate/foodList.feature
+01:20:41.030 [main]  INFO  com.intuit.karate - Karate version: 1.2.0.RC1
+01:20:44.611 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=Egg
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:20:45.229 [main]  DEBUG com.intuit.karate - response time in milliseconds: 603
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 63
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:20:45 GMT
+1 < Etag: "n0mu8xj32y1r"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::nlnfz-1718734844974-a942141a55e2
+{"food":{"id":47,"name":"Egg","calories":78,"cholesterol":186}}
+01:20:45.389 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo?name=NonExistentFood
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:20:45.776 [main]  DEBUG com.intuit.karate - response time in milliseconds: 387
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:20:45 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::x67fd-1718734845513-7e8175df5fe9
+{}
+01:20:45.792 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodInfo
+1 > accept: application/json, text/plain, */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:20:46.175 [main]  DEBUG com.intuit.karate - response time in milliseconds: 371
+1 < 400
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:20:46 GMT
+1 < Etag: "bwc9mymkdm2"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodInfo
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::fdb6j-1718734845912-6f1831a11306
+{}
+01:20:47.486 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (0 remaining) src/test/java/karate/foodInfo.feature
+01:20:47.510 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://eten-api.vercel.app/api/foodList
+1 > accept: */*
+1 > Host: eten-api.vercel.app
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:20:47.872 [main]  DEBUG com.intuit.karate - response time in milliseconds: 358
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 < Access-Control-Allow-Methods: GET,OPTIONS,PATCH,DELETE,POST,PUT
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Control: public, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 18 Jun 2024 18:20:47 GMT
+1 < Etag: W/"qujbdhqw0d3hp"
+1 < Server: Vercel
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Matched-Path: /api/foodList
+1 < X-Vercel-Cache: MISS
+1 < X-Vercel-Id: sin1::iad1::ssq52-1718734847631-73b465ad3f41
+1 < Transfer-Encoding: chunked
+["Apple","Banana","Orange","Pear","Grapes","Strawberries","Blueberries","Raspberries","Watermelon","Pineapple","Mango","Peach","Plum","Apricot","Kiwi","Cherry","Lemon","Lime","Grapefruit","Avocado","Cucumber","Tomato","Carrot","Celery","Broccoli","Spinach","Lettuce","Cabbage","Bell pepper","Eggplant","Zucchini","Cauliflower","Asparagus","Green beans","Peas","Corn","Potato","Sweet potato","Pumpkin","Butternut squash","Acorn squash","Spaghetti squash","Butter","Milk","Yogurt","Cheese","Egg","Beef","Pork","Chicken","Turkey","Salmon","Tuna","Trout","Shrimp","Crab","Lobster","Oyster","Clam","Scallop","Tofu","Tempeh","Seitan","Quinoa","Brown rice","Oats","Whole wheat bread","Whole wheat pasta","Lentils","Black beans","Chickpeas","Kidney beans","Almonds","Walnuts","Peanuts","Cashews","Pistachios","Hazelnuts","Pecans","Brazil nuts","Macadamia nuts","Pumpkin seeds","Sunflower seeds","Flaxseeds","Chia seeds","Hemp seeds","Sesame seeds","Poppy seeds","Coconut","Coconut milk","Coconut oil","Olive oil","Canola oil","Soybean oil","Corn oil","Peanut oil","Sunflower oil","Avocado oil","Almond oil","Wheat germ oil","Soy sauce","Tamari","Fish sauce","Oyster sauce","Worcestershire sauce","Sriracha","Ketchup","Mustard","Mayonnaise","Barbecue sauce","Honey","Maple syrup","Molasses","Agave nectar","Coconut sugar","Stevia","Brown sugar","White sugar","Powdered sugar","Milk chocolate","Dark chocolate","White chocolate","Cocoa powder","Chocolate syrup","Peanut butter","Almond butter","Cashew butter","Hazelnut spread","Sunflower seed butter","Coconut butter","Apple pie","Banana bread","Blueberry muffin","Carrot cake","Chocolate chip cookies","Cheesecake","Brownies","Cupcakes","Pancakes","Waffles","French toast","Cinnamon rolls","Donuts","Croissants","Bagels","English muffins","Scones","Biscuits","Cornbread","Rice pudding","Bread pudding","Apple crisp","Peach cobbler","Cherry pie","Strawberry shortcake","Key lime pie","Pecan pie","Pumpkin pie","Sweet potato pie","Chocolate cake","Vanilla cake","Red velvet cake","Angel food cake","Tiramisu","Fruit salad","Ambrosia salad","Caesar salad","Cobb salad","Nicoise salad","Waldorf salad","Greek salad","Caprese salad","Antipasto salad","Chef salad","Spinach salad","Taco salad","Fajita salad","Coleslaw","Potato salad","Macaroni salad","Egg salad","Pasta salad","Quiche","Sushi","Tempura","Sashimi","Ramen","Udon","Soba","Pho","Pad Thai","Spring rolls","Gyoza","Tandoori chicken","Butter chicken","Chicken tikka masala","Saag paneer","Dal makhani","Aloo gobi","Biryani","Chicken curry","Beef curry","Lamb curry","Vegetable curry","Chickpea curry","Egg curry","Paneer curry","Korma","Masala dosa","Idli","Vada","Samosa","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Pempek","Ayam Goreng","Nasi Uduk","Martabak","Bubur Ayam","Rujak","Lontong Sayur","Nasi Kuning","Pecel Lele","Sate Padang","Sop Buntut","Sambal Goreng Kentang","Bakmi Goreng","Pisang Goreng","Sop Ayam","Rawon","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Nasi Pecel","Rendang Padang","Sayur Asem","Sate Kambing","Sambal Telur","Gulai Ayam","Mie Ayam","Ayam Goreng Kalasan","Nasi Liwet","Lontong Sayur","Sambal Goreng Kentang","Sate Klathak","Tahu Campur","Nasi Liwet Solo","Ayam Goreng Kalasan","Pisang Goreng","Soto Betawi","Gudeg","Laksa","Nasi Kuning","Soto Ayam","Rendang Padang","Nasi Goreng","Mie Goreng","Sate Ayam","Soto Ayam","Gado-Gado","Rendang","Ayam Bakar","Nasi Padang","Bakso","Nasi Lemak","Roti Canai","Char Kway Teow","Hainanese Chicken Rice","Mee Goreng","Satay","Rendang","Laksa","Nasi Goreng","Murtabak","Mee Rebus","Otak-Otak","Nasi Kerabu","Popiah","Ayam Percik","Mee Siam","Lontong","Nasi Dagang","Pulut Panggang","Kuih Lapis","Ketupat","Kuih Dadar","Pisang Goreng","Cendol","Kaya Toast","Durian Pancake","Roti Bakar","Nasi Impit","Mee Bandung","Keropok Lekor","Apam Balik","Kuih Talam","Tauhu Sumbat","Pulut Inti","Mee Hoon Kueh","Serunding","Bubur Lambuk","Asam Pedas","Kuih Kapit","Mee Jawa","Hainanese Chicken Rice","Chilli Crab","Char Kway Teow","Laksa","Bak Kut Teh","Roti Prata","Satay","Fish Head Curry","Hokkien Mee","Tau Huay","Bak Chor Mee","Kaya Toast","Nasi Lemak","Kopi","Carrot Cake","Bak Chor Mee","Bak Kut Teh","Kaya Toast","Nasi Lemak","Roti Prata","Satay","Chilli Crab","Laksa","Hainanese Chicken Rice","Tau Huay","Fish Head Curry","Char Kway Teow","Hokkien Mee","Kopi","Carrot Cake"]
+01:20:48.036 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (0 remaining) src/test/java/karate/foodList.feature
+01:20:48.052 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/posts/1
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:20:48.226 [main]  DEBUG com.intuit.karate - response time in milliseconds: 174
+1 < 200
+1 < Date: Tue, 18 Jun 2024 18:20:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712085044&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=5bmno5H5ge72f6ZZ4%2B52pSdbReNAenxXqSzCrWHAqk4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712085044&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=5bmno5H5ge72f6ZZ4%2B52pSdbReNAenxXqSzCrWHAqk4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1712085075
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 18891
+1 < Server: cloudflare
+1 < CF-RAY: 895d4ba159fd4073-SIN
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+01:20:48.312 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) src/test/java/karate/sample.feature
+01:20:48.328 [main]  DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
